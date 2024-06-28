@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Adebayo Muis, Charmingdc">
+  <meta name="description" content="Dictionary web app by charmingdc">
+
+  <title> Dictionary </title>
+  
+  <!-- HTML -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bdy">
+  <header>
+    <nav>
+      <ul id="navbar">
+        <li>
+          <h1>
+           <i class="fa-solid fa-book" id="icon"></i> Dictionary
+          </h1>
+        </li>
+        <li id="toggle">
+          <i class="fa-solid fa-circle-half-stroke" id="theme"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <div class="container">
+      
+      <div id="search-box">
+        <input type="search" name="search" id="search" class="search" placeholder="Enter your keyword...">
+        
+        <button id="enter">
+          <i class="fa-solid fa-paper-plane" id="send"></i>
+        </button>
+      </div>
+      
+      <ul id="word-info">
+        <li>
+          <h1 id="word">
+          
+          </h1> 
+          <p id="phonetic">
+            
+          </p>
+        </li>
+        <li id="speak">
+          <button id="listen">
+            <i class="fa-solid fa-volume-up" id="pronounce"></i>
+          </button>
+        </li>
+      </ul>
+      
+      
+      <div class="entries">
+        
+ 
+      </div>
+      
+    </div>
+    
+    <audio controls id="voice">
+      <source src="" type="audio/mp3">
+      Playing auido isn't supported by your browser 
+    </audio>
+  </main>
+  
+  <script src="main.js"></script>
+</body>
+</html>
